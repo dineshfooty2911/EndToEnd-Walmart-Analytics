@@ -1,4 +1,4 @@
-## End to end project
+## End to end  project hi
 
 Dataset -stock, transactional, inventory
 
@@ -17,9 +17,11 @@ The csv file in the Azure Lake gen is loaded to azure data factory source.
 
 ## Transformation 
 
+Adding columns 
+
 Stock – find the percentage of change
 transactional – tax (5%), total cost 
-Inventory – separate department and category
+Inventory – separate department and category 
 
 ## Load
 
