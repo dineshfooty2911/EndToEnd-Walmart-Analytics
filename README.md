@@ -1,31 +1,33 @@
-## End to end  project hi
+# End-to-End Data Analysis Project
 
-Dataset -stock, transactional, inventory
+## Project Objective
 
-Stock data - By analyzing this historical stock data, you can gain insights into the past behavior of the stock, which can help in making informed decisions for future investments.
+The objective of this end-to-end project is to analyze historical stock data, customer purchasing behavior, sales performance, and inventory trends using a dataset consisting of three CSV files: stock, transactional, and inventory. The project aims to extract, transform, and load (ETL) data from these CSV files using Azure Data Factory and then visualize the insights gained from the analysis in Power BI.
 
-Transactional data - This dataset is used to analyze customer purchasing behavior, sales performance, product popularity, and the effectiveness of the membership program, among other insights.
-Inventory data -  
+## Key Objectives
 
-Tools used - Azure data factory, azure lake Gen 2, azure SQL database, Power BI
+### Data Extraction
 
+- Extract data from the stock, transactional, and inventory CSV files stored in Azure Data Lake Gen2 using Azure Data Factory.
 
+### Data Transformation
 
-## Extract
+- Apply transformations to the datasets to derive meaningful insights.
+  - For stock data, calculate the percentage change in stock prices.
+  - For transactional data, apply a 5% tax and calculate the total cost of transactions.
+  - For inventory data, separate the data based on department and category.
 
-The csv file in the Azure Lake gen is loaded to azure data factory source.
+### Data Loading
 
-## Transformation 
+- Load the transformed data into Azure SQL Database using Azure Data Factory.
 
-Adding columns 
+### Visualization
 
-Stock – find the percentage of change
-transactional – tax (5%), total cost 
-Inventory – separate department and category 
+- Connect Power BI to Azure SQL Database to import the transformed data.
+- Design Power BI reports and dashboards to visualize insights from stock, transactional, and inventory data.
 
-## Load
+### Analysis and Insights
 
-The transformed data is loaded into the Azure SQL database 
-From the SQL database the data is exported to power BI and visualized 
-
-
+- Analyze historical stock data to gain insights into stock behavior.
+- Explore customer purchasing behavior, sales performance, product popularity, and the effectiveness of the membership program using transactional data.
+- Gain insights into inventory trends by department and category.
