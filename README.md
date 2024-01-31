@@ -15,7 +15,7 @@ Efficiently ingest Walmart's diverse datasets into Azure Blob Storage. The data 
 ## Azure services used in the project.
 
 ## Azure Databricks
-### Role in Project: Comprehensive Data Processing, Cleansing, Transformation, and data movement
+Role in Project: Comprehensive Data Processing, Cleansing, Transformation, and data movement
 ### Value to Project:
 Unified Data Processing Workflow: By leveraging Databricks for both data cleansing and transformation, the project benefits from a streamlined and integrated data processing workflow. This unified approach simplifies management and improves efficiency.
 Ensures Data Quality: Databricks' comprehensive data cleansing and transformation processes ensure that the data is of high quality. This is essential for conducting accurate downstream analysis and making informed decisions.
