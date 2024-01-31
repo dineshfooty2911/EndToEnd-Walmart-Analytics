@@ -10,7 +10,8 @@ Efficiently ingest Walmart's diverse datasets into Azure Blob Storage. The data 
 4.	Processed Data Storage: The transformed data is written back to Azure Blob Storage in an optimized format for further analysis or visualization.
 5.	Visualization: Power BI connects to the processed data to create interactive visualizations and reports that provide business intelligence and insights.
 
-
+## FlowChart
+flowdiagram.jpg
 ## Key Objectives
 
 ### Data Extraction
