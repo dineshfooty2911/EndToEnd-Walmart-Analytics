@@ -14,7 +14,7 @@ Efficiently ingest Walmart's diverse datasets into Azure Blob Storage. The data 
 [flowdiagram.jpg](https://github.com/dineshfooty2911/EndToEnd-Walmart-Analytics/blob/b9498651ee004672f02cc06b9e1a24b254537f60/flowdiagram.jpg)
 ## Azure services used in the project.
 
-## Azure Databricks
+### Azure Databricks
 Role in Project: Comprehensive Data Processing, Cleansing, Transformation, and data movement
 ### Value to Project:
 Unified Data Processing Workflow: By leveraging Databricks for both data cleansing and transformation, the project benefits from a streamlined and integrated data processing workflow. This unified approach simplifies management and improves efficiency.
