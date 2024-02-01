@@ -116,4 +116,82 @@ Each dataset is unique and offers distinct insights into Walmart's operations.
 
 - Gain insights into inventory trends by department and category.
 
-# Data Ingestion in Azure Databricks
+## Data Ingestion in Azure Databricks
+*Kaggle Dataset Download:* Accessed the Kaggle platform to acquire the Walmart dataset and prepared the dataset by downloading it to a local environment, gearing up for the data ingestion process.
+
+*Databricks Configuration:* Configured a Databricks workspace, tailoring it for the specific needs of the Walmart dataset processing.
+
+*Direct Data Upload:* Uploaded the Walmart dataset directly into Databricks, bypassing Azure Blob Storage. This direct approach streamlined the process, allowing for immediate access to the data within the Databricks environment.
+
+## Data Cleaning using Databricks:
+Leveraging Databricks' robust data processing capabilities, the Walmart dataset underwent thorough cleaning to ensure data quality and reliability. 
+
+The cleaning process involved:
+
+**Null Value Treatment:**
+*Identification:* Utilized Databricks’ powerful data processing tools to identify null or missing values within the dataset.
+
+*Handling:* Implemented strategies like imputing default values or removing incomplete rows, tailored to the dataset's characteristics and the project's requirements.
+
+**De-duplication:**
+
+*Detection:* Employed Databricks’ functionalities to detect duplicate entries in the dataset.
+
+*Resolution:* Applied data manipulation techniques to remove or merge duplicates, ensuring the integrity and uniqueness of the dataset.
+
+By directly ingesting the dataset into Databricks, the workflow was significantly simplified, enabling a more efficient data processing pipeline. The advanced data manipulation features of Databricks were fully utilized to clean and prepare the Walmart dataset for subsequent analysis and insights generation. This approach emphasizes the versatility and efficiency of Databricks in handling complex data tasks, from ingestion to cleaning, in a unified environment.
+
+## Data Transformation 
+
+Azure Databricks is also used in advanced transformations. Here's a simplified glimpse of why Databricks is the project virtuoso:
+
+**Maximizes Data Processing Capabilities:**
+
+•	Databricks is engineered to handle complex data processing tasks with ease. Its ability to manage large volumes of data and intricate transformations makes it an ideal choice for comprehensive data analytics.
+
+•	By leveraging the powerful Spark engine, Databricks optimizes data processing, ensuring that analytics are performed efficiently and effectively. This leads to faster insights and more dynamic data manipulation capabilities.
+
+**Enhances Analytical Accuracy:**
+•	The initial phase of data cleaning and preparation in Databricks sets the stage for high-quality analytics. By ensuring the data is precise and cleansed, Databricks creates a robust foundation for subsequent analysis.
+
+Azure Databricks serves as a crucial tool in your project, adeptly handling complex transformations and elevating the quality of analytics.
+
+In this project, data transformation plays a pivotal role in refining the raw datasets into forms that are more suitable for analysis. Using Azure Databricks, specific transformation tasks are applied to the Walmart datasets, enhancing their analytical value.
+
+**Objectives of Data Transformation:**
+*Enhance Data Accuracy:* Refine and correct the data to improve its accuracy for analysis.
+*Facilitate Analysis:* Transform the data into formats that are easier to analyze and interpret.
+*Data Integration and Segmentation:* Split and combine data to achieve a more comprehensive analytical view.
+
+### Transformation Tasks:
+
+**Stock Dataset:**
+Script Used:
+"""df1 = pd.read_parquet("/dbfs/mnt/data/df1.parquet")
+df1['Percentage Change'] = (df1['Price'].pct_change() * 100).abs().round(2)"""
+
+**Key Transformations:**
+•	Calculate the absolute percentage change in stock price, providing a clearer view of price fluctuations.
+
+•	Conversion of the stock data into a format more conducive for time-series analysis.
+
+Inventory Dataset:
+Script Used:
+df3 = pd.read_parquet("/dbfs/mnt/data/df3.parquet")
+df3['DEPARTMENT'], df3['CATEGORY'] = df3['BREADCRUMBS'].str.split('/', 1).str
+Key Transformations:
+•	Split 'BREADCRUMBS' into two separate columns, 'DEPARTMENT' and 'CATEGORY', for more granular analysis.
+•	This approach simplifies categorical analysis and enhances data clarity.
+Transactional Dataset:
+Script Used:
+df2 = pd.read_parquet("/dbfs/mnt/data/df2.parquet")
+df2['Tax (10%)'] = df2['Unit price'] * df2['Quantity'] * 0.10
+df2['Total Price'] = df2['Unit price'] * df2['Quantity'] + df2['Tax (10%)']
+Key Transformations:
+•	Calculation of tax for each transaction, providing a more comprehensive view of the transactional costs.
+•	Computation of the total price, including tax, for each transaction, essential for revenue analysis.
+
+These transformation scripts are executed within Databricks notebooks, ensuring a streamlined and automated process. The transformation logic is tailored specifically to the needs of each dataset, demonstrating the flexibility of Databricks.
+
+
+
