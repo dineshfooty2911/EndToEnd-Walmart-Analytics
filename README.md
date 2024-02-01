@@ -15,7 +15,7 @@ Efficiently ingest Walmart's diverse datasets into Azure Blob Storage. The data 
 ## Azure services used in the project.
 
 ### Azure Databricks
-Role in Project: Comprehensive Data Processing, Cleansing, Transformation, and data movement
+**Role in Project:** Comprehensive Data Processing, Cleansing, Transformation, and data movement
 ### Value to Project:
 *Unified Data Processing Workflow*: By leveraging Databricks for both data cleansing and transformation, the project benefits from a streamlined and integrated data processing workflow. This unified approach simplifies management and improves efficiency.
 
@@ -30,13 +30,49 @@ Role in Project: Comprehensive Data Processing, Cleansing, Transformation, and d
 By focusing on these key areas, Azure Databricks provides a robust and versatile platform for handling all aspects of data management in your project, from ingestion and cleansing to transformation and analysis. This comprehensive approach not only streamlines the data workflow but also ensures the reliability and accuracy of the insights derived from the data.
 
 
-### Visualization
+ # Data Understanding
+Each dataset is unique and offers distinct insights into Walmart's operations.
 
-- Connect Power BI to Azure SQL Database to import the transformed data.
-- Design Power BI reports and dashboards to visualize insights from stock, transactional, and inventory data.
+### 1.Stock Data:
+**Data Description**: The dataset provides a detailed view of stock price fluctuations over time.
+**Columns:** 
+•	Date: The date of the stock record (datetime format).
+•	Price: The closing price of the stock for the given date (numeric).
+•	Open: The opening price of the stock on that day (numeric).
+•	High: The highest price of the stock on that day (numeric).
+•	Low: The lowest price of the stock on that day (numeric).
+•	Vol: The volume of stocks traded on that day(numeric).
+•	Percentage Change: The percentage change in the stock price compared to the previous day (numeric).
+### 2.Inventory Data: 
+**Data Description**: This dataset provides the information about the inventory, including product assortment and pricing.
+**Columns:**  
+•	Index: A numerical index or identifier for the record.
+•	SHIPPING_LOCATION: The numeric code representing the location of shipping.
+•	PRODUCT_NAME: The name of the product (string).
+•	BRAND: The brand of the product (string).
+•	PRICE_RETAIL: The retail price of the product (numeric).
+•	PRODUCT_SIZE: The size of the product (numeric, assumed to be in standard units).
+•	DEPARTMENT: The department to which the product belongs (string).
+•	CATEGORY: The specific category of the product (string).
+### 3. Transactional Data:
+**Data Description:**  This dataset offers a comprehensive overview of sales transactions, encompassing customer demographics, purchasing details, and financials.
+**Columns:** 
+•	Invoice ID: A unique identifier for each transaction (string).
+•	Branch: The branch of Walmart where the transaction occurred (string).
+•	City: The city in which the branch is located (string).
+•	Customer type: Type of customer (e.g., Normal, Member) (string).
+•	Gender: Gender of the customer (string).
+•	Product line: The line of product purchased (string).
+•	Unit price: Price per unit of the product (numeric).
+•	Quantity: The number of units purchased (numeric).
+•	Date: The date of the transaction (datetime format).
+•	Payment: The mode of payment used (string).
+•	Tax (10%): The tax applied to the transaction (numeric).
+•	Total Price: The total price of the transaction, including tax (numeric).
+### Value to Project:
+•	Comprehensive Analysis: These datasets collectively offer a multifaceted view of Walmart's operations, from stock levels and inventory management to customer transactions.
+•	Data-Driven Insights: Understanding these datasets allows for deeper analysis and more accurate business intelligence insights, such as inventory optimization, sales trends, and customer behavior analysis.
+•	Quality Control: Assessing the quality of these datasets upfront aids in ensuring the reliability of any conclusions drawn from the data.
+•	By thoroughly understanding these datasets, we lay the groundwork for meaningful data analysis, ensuring that the insights derived are both accurate and actionable.
 
-### Analysis and Insights
-
-- Analyze historical stock data to gain insights into stock behavior.
-- Explore customer purchasing behavior, sales performance, product popularity, and the effectiveness of the membership program using transactional data.
 - Gain insights into inventory trends by department and category.
