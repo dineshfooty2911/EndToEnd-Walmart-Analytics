@@ -35,25 +35,45 @@ Each dataset is unique and offers distinct insights into Walmart's operations.
 
 ### 1.Stock Data:
 **Data Description**: The dataset provides a detailed view of stock price fluctuations over time.
-**Columns:** 
+
+**Columns:**
+
 •	Date: The date of the stock record (datetime format).
+
 •	Price: The closing price of the stock for the given date (numeric).
+
 •	Open: The opening price of the stock on that day (numeric).
+
 •	High: The highest price of the stock on that day (numeric).
+
 •	Low: The lowest price of the stock on that day (numeric).
+
 •	Vol: The volume of stocks traded on that day(numeric).
+
 •	Percentage Change: The percentage change in the stock price compared to the previous day (numeric).
+
 ### 2.Inventory Data: 
+
 **Data Description**: This dataset provides the information about the inventory, including product assortment and pricing.
+
 **Columns:**  
+
 •	Index: A numerical index or identifier for the record.
+
 •	SHIPPING_LOCATION: The numeric code representing the location of shipping.
+
 •	PRODUCT_NAME: The name of the product (string).
+
 •	BRAND: The brand of the product (string).
+
 •	PRICE_RETAIL: The retail price of the product (numeric).
+
 •	PRODUCT_SIZE: The size of the product (numeric, assumed to be in standard units).
+
 •	DEPARTMENT: The department to which the product belongs (string).
+
 •	CATEGORY: The specific category of the product (string).
+
 ### 3. Transactional Data:
 **Data Description:**  This dataset offers a comprehensive overview of sales transactions, encompassing customer demographics, purchasing details, and financials.
 **Columns:** 
