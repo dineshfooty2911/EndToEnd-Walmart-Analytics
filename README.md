@@ -75,24 +75,45 @@ Each dataset is unique and offers distinct insights into Walmart's operations.
 •	CATEGORY: The specific category of the product (string).
 
 ### 3. Transactional Data:
+
 **Data Description:**  This dataset offers a comprehensive overview of sales transactions, encompassing customer demographics, purchasing details, and financials.
+
 **Columns:** 
+
 •	Invoice ID: A unique identifier for each transaction (string).
+
 •	Branch: The branch of Walmart where the transaction occurred (string).
+
 •	City: The city in which the branch is located (string).
+
 •	Customer type: Type of customer (e.g., Normal, Member) (string).
+
 •	Gender: Gender of the customer (string).
+
 •	Product line: The line of product purchased (string).
+
 •	Unit price: Price per unit of the product (numeric).
+
 •	Quantity: The number of units purchased (numeric).
+
 •	Date: The date of the transaction (datetime format).
+
 •	Payment: The mode of payment used (string).
+
 •	Tax (10%): The tax applied to the transaction (numeric).
+
 •	Total Price: The total price of the transaction, including tax (numeric).
+
 ### Value to Project:
+
 •	Comprehensive Analysis: These datasets collectively offer a multifaceted view of Walmart's operations, from stock levels and inventory management to customer transactions.
+
 •	Data-Driven Insights: Understanding these datasets allows for deeper analysis and more accurate business intelligence insights, such as inventory optimization, sales trends, and customer behavior analysis.
+
 •	Quality Control: Assessing the quality of these datasets upfront aids in ensuring the reliability of any conclusions drawn from the data.
+
 •	By thoroughly understanding these datasets, we lay the groundwork for meaningful data analysis, ensuring that the insights derived are both accurate and actionable.
 
 - Gain insights into inventory trends by department and category.
+
+# Data Ingestion in Azure Databricks
