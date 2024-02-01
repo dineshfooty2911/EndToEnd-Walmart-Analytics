@@ -166,6 +166,7 @@ In this project, data transformation plays a pivotal role in refining the raw da
 ### Transformation Tasks:
 
 **Stock Dataset:**
+
 Script Used:
 ```
 df1 = pd.read_parquet("/dbfs/mnt/data/df1.parquet")
@@ -177,19 +178,27 @@ df1['Percentage Change'] = (df1['Price'].pct_change() * 100).abs().round(2)
 
 •	Conversion of the stock data into a format more conducive for time-series analysis.
 
-Inventory Dataset:
+**Inventory Dataset:**
+
 Script Used:
+```
 df3 = pd.read_parquet("/dbfs/mnt/data/df3.parquet")
 df3['DEPARTMENT'], df3['CATEGORY'] = df3['BREADCRUMBS'].str.split('/', 1).str
-Key Transformations:
+```
+**Key Transformations:**
 •	Split 'BREADCRUMBS' into two separate columns, 'DEPARTMENT' and 'CATEGORY', for more granular analysis.
 •	This approach simplifies categorical analysis and enhances data clarity.
-Transactional Dataset:
+
+**Transactional Dataset:**
+
 Script Used:
+```
 df2 = pd.read_parquet("/dbfs/mnt/data/df2.parquet")
 df2['Tax (10%)'] = df2['Unit price'] * df2['Quantity'] * 0.10
 df2['Total Price'] = df2['Unit price'] * df2['Quantity'] + df2['Tax (10%)']
-Key Transformations:
+```
+
+**Key Transformations:**
 •	Calculation of tax for each transaction, providing a more comprehensive view of the transactional costs.
 •	Computation of the total price, including tax, for each transaction, essential for revenue analysis.
 
