@@ -167,8 +167,10 @@ In this project, data transformation plays a pivotal role in refining the raw da
 
 **Stock Dataset:**
 Script Used:
-'''df1 = pd.read_parquet("/dbfs/mnt/data/df1.parquet")
-df1['Percentage Change'] = (df1['Price'].pct_change() * 100).abs().round(2)'''
+```
+df1 = pd.read_parquet("/dbfs/mnt/data/df1.parquet")
+df1['Percentage Change'] = (df1['Price'].pct_change() * 100).abs().round(2)
+```
 
 **Key Transformations:**
 •	Calculate the absolute percentage change in stock price, providing a clearer view of price fluctuations.
