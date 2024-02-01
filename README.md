@@ -1,5 +1,17 @@
 # Walmart Analytics:  Data Transformation and Business Intelligence using Azure and Power BI 
+# Table of Contents
 
+1. [Project Objective](#project-objective)
+2. [Overview](#overview)
+3. [FlowChart](#flowchart)
+4. [Azure services used in the project](#azure-services-used-in-the-project)
+    - [Azure Databricks](#azure-databricks)
+    - [Data Understanding](#data-understanding)
+5. [Data Ingestion in Azure Databricks](#data-ingestion-in-azure-databricks)
+6. [Data Cleaning using Databricks](#data-cleaning-using-databricks)
+7. [Data Transformation](#data-transformation)
+    - [Transformation Tasks](#transformation-tasks)
+8. [Conclusion](#conclusion)
 ## Project Objective
 
 Efficiently ingest Walmart's diverse datasets into Azure Blob Storage. The data quality is ensured through preliminary cleansing tasks, addressing deduplication and null values. Utilize Azure Databricks for intricate data transformations, Optimize and store the transformed Walmart data in Azure Blob Storage for subsequent analysis and visualization in Power BI, aiming to derive actionable business intelligence insights.
