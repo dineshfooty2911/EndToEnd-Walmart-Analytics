@@ -138,6 +138,7 @@ Leveraging Databricks' robust data processing capabilities, the Walmart dataset 
 The cleaning process involved:
 
 **Null Value Treatment:**
+
 *Identification:* Utilized Databricks’ powerful data processing tools to identify null or missing values within the dataset.
 
 *Handling:* Implemented strategies like imputing default values or removing incomplete rows, tailored to the dataset's characteristics and the project's requirements.
@@ -161,15 +162,16 @@ Azure Databricks is also used in advanced transformations. Here's a simplified g
 •	By leveraging the powerful Spark engine, Databricks optimizes data processing, ensuring that analytics are performed efficiently and effectively. This leads to faster insights and more dynamic data manipulation capabilities.
 
 **Enhances Analytical Accuracy:**
-•	The initial phase of data cleaning and preparation in Databricks sets the stage for high-quality analytics. By ensuring the data is precise and cleansed, Databricks creates a robust foundation for subsequent analysis.
 
-Azure Databricks serves as a crucial tool in your project, adeptly handling complex transformations and elevating the quality of analytics.
+•	The initial phase of data cleaning and preparation in Databricks sets the stage for high-quality analytics. By ensuring the data is precise and cleansed, Databricks creates a robust foundation for subsequent analysis.
 
 In this project, data transformation plays a pivotal role in refining the raw datasets into forms that are more suitable for analysis. Using Azure Databricks, specific transformation tasks are applied to the Walmart datasets, enhancing their analytical value.
 
 **Objectives of Data Transformation:**
 *Enhance Data Accuracy:* Refine and correct the data to improve its accuracy for analysis.
+
 *Facilitate Analysis:* Transform the data into formats that are easier to analyze and interpret.
+
 *Data Integration and Segmentation:* Split and combine data to achieve a more comprehensive analytical view.
 
 ### Transformation Tasks:
@@ -183,6 +185,7 @@ df1['Percentage Change'] = (df1['Price'].pct_change() * 100).abs().round(2)
 ```
 
 **Key Transformations:**
+
 •	Calculate the absolute percentage change in stock price, providing a clearer view of price fluctuations.
 
 •	Conversion of the stock data into a format more conducive for time-series analysis.
@@ -195,12 +198,15 @@ df3 = pd.read_parquet("/dbfs/mnt/data/df3.parquet")
 df3['DEPARTMENT'], df3['CATEGORY'] = df3['BREADCRUMBS'].str.split('/', 1).str
 ```
 **Key Transformations:**
+
 •	Split 'BREADCRUMBS' into two separate columns, 'DEPARTMENT' and 'CATEGORY', for more granular analysis.
+
 •	This approach simplifies categorical analysis and enhances data clarity.
 
 **Transactional Dataset:**
 
 Script Used:
+
 ```
 df2 = pd.read_parquet("/dbfs/mnt/data/df2.parquet")
 df2['Tax (10%)'] = df2['Unit price'] * df2['Quantity'] * 0.10
@@ -208,7 +214,9 @@ df2['Total Price'] = df2['Unit price'] * df2['Quantity'] + df2['Tax (10%)']
 ```
 
 **Key Transformations:**
+
 •	Calculation of tax for each transaction, providing a more comprehensive view of the transactional costs.
+
 •	Computation of the total price, including tax, for each transaction, essential for revenue analysis.
 
 These transformation scripts are executed within Databricks notebooks, ensuring a streamlined and automated process. The transformation logic is tailored specifically to the needs of each dataset, demonstrating the flexibility of Databricks.
