@@ -5,12 +5,9 @@
 2. [Overview](#overview)
 3. [FlowChart](#flowchart)
 4. [Azure services used in the project](#azure-services-used-in-the-project)
-    - [Azure Databricks](#azure-databricks)
-    - [Data Understanding](#data-understanding)
 5. [Data Ingestion in Azure Databricks](#data-ingestion-in-azure-databricks)
 6. [Data Cleaning using Databricks](#data-cleaning-using-databricks)
 7. [Data Transformation](#data-transformation)
-    - [Transformation Tasks](#transformation-tasks)
 8. [Conclusion](#conclusion)
 ## Project Objective
 
