@@ -20,7 +20,7 @@ Efficiently ingest Walmart's diverse datasets into Azure Blob Storage. The data 
 5.	Visualization: Power BI connects to the processed data to create interactive visualizations and reports that provide business intelligence and insights.
 
 ## FlowChart
-[flowdiagram.jpg](https://github.com/dineshfooty2911/EndToEnd-Walmart-Analytics/blob/b9498651ee004672f02cc06b9e1a24b254537f60/flowdiagram.jpg)
+![Flow Diagram](https://github.com/dineshfooty2911/EndToEnd-Walmart-Analytics/blob/b9498651ee004672f02cc06b9e1a24b254537f60/flowdiagram.jpg?raw=true)
 ## Azure services used in the project.
 
 ### Azure Databricks
